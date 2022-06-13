@@ -678,6 +678,116 @@ font-size: x-large;
 
 }
 
+@media (max-width: 1023px) {
+
+    .Header {
+
+        padding: 12px 20px;
+
+    }
+
+    .Navigation a {
+
+        padding-left: 10px;
+
+    }
+
+    .Logo {
+
+        font-size: 1.8em;
+
+    }
+
+    section {
+
+        padding: 80px 20px;
+
+    }
+
+    .main {
+
+        font-size: 1.3em;
+
+    }
+
+    .Content {
+
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+
+    .PicDiv {
+
+        flex-direction: column;
+        
+        
+
+
+    }
+
+
+    .Facebook {
+
+        padding-left: 140px;
+        padding-bottom: 25px;
+
+    }
+
+    .Fiverr {
+
+        padding-bottom: 25px;
+
+
+    }
+
+    .Behance {
+
+        padding-bottom: 25px;
+
+    }
+
+    .Mail {
+
+        padding-bottom: 25px;
+
+    }
+
+    .Fiverr {
+
+        padding-bottom: 25px;
+
+    }
+
+    .Cont-Text {
+
+        padding-left: 10px;
+
+    }
+
+    .Icon1 {
+
+        margin-left: 80px;
+
+    }
+
+
+
+}
+
+
+@media (max-width: 641px) {
+
+body {
+
+    font-size: 12px;
+
+
+}
+
+
+}
 
 
 
