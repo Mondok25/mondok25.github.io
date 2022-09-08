@@ -1,105 +1,816 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300,400,500,700&display=swap');
+@keyframes transition0 {
+
+    from {
+
+        opacity: 0.5;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+
+}
+
+
+
+@keyframes transition1 {
+
+    from {
+
+        color: rgb(0, 136, 255);
+
+    }
+
+    to {
+
+        color: rgb(134, 21, 215);
+
+    }
+
+
+}
+
+@keyframes transition2 {
+
+    from {
+
+        
+        color: rgb(134, 21, 215);
+
+    }
+
+    to {
+
+        color: rgb(0, 136, 255);
+
+    }
+
+
+}
+
+@keyframes transition3 {
+
+    from {
+
+        
+        background-color: rgb(0, 136, 255);
+        color: white;
+
+    }
+
+    to {
+
+        background-color: gold;
+        color: black;
+
+    }
+
+
+}
+
+@keyframes transition4 {
+
+    from {
+
+        
+
+        background-color: gold;
+        color: black
+
+    }
+
+    to {
+
+        background-color: rgb(0, 136, 255);
+        color: white;
+
+    }
+
+
+}
+
+
+@keyframes transition5 {
+
+    from {
+
+        transform: scale(1);
+
+    }
+
+    to {
+
+        transform: scale(1.1);
+
+    }
+
+}
+
+
+@keyframes transition6 {
+
+    from {
+
+        
+        transform: scale(1.1);
+
+    }
+
+    to {
+
+        transform: scale(1);
+
+    }
+
+}
+
+@keyframes transition7 {
+
+    from {
+
+        
+        color: blue ;
+
+    }
+
+    to {
+
+        color: gold;
+
+    }
+
+}
+
+@keyframes transition8 {
+
+    from {
+
+        
+        
+        color: gold;
+
+    }
+
+    to {
+
+        color: blue ;
+
+    }
+
+}
+
+
+@keyframes transition9 {
+
+    from {
+
+        
+        
+        background-color: rgb(0, 170, 255);
+        color: white;
+        font-size: 19px;
+        
+
+    }
+
+    to {
+
+        background-color: gold;
+        color: black;
+        font-size: 20px;
+        
+
+    }
+
+}
+
+@keyframes transition10 {
+
+    from {
+
+        
+        
+        
+        background-color: gold;
+        color: black;
+        font-size: 20px;
+
+    }
+
+    to {
+
+        background-color: rgb(0, 170, 255);
+        color: white;
+        font-size: 19px;
+
+    }
+
+}
+
+@keyframes transition11 {
+
+    from {
+
+        color: black;
+        width: 70px;
+        height: 70px;
+
+    }
+
+    to {
+
+        color: blue;
+        width: 80px;
+        height: 70px;
+
+    }
+}
+
+
+@keyframes transition12 {
+
+    from {
+
+        color: blue;
+        width: 80px;
+        height: 70px;
+
+    }
+
+    to {
+
+        color: black;
+        width: 70px;
+        height: 70px;
+
+    }
+
+}
+
+
+
+
+
 
 
 *{
-    
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  outline: none;
-  
+
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: transition0 0.7s;
 
 
 }
 
-:root {
-  --main-color: #6edb9a;
-  --blue: #4d8e50;
-  --blue-dark: #18293c;
-  --orange: #ffa500;
-  --green-yellow: #8cff00;
-  --pink-light: #7be08c;
-  --cyan-light: #5ae4dd;
-  --white: #fff;
-  --white-alpha-40: rgba(255,255,255, 0.40);
-  --white-alpha-25: rgba(255,255,255, 0.25);
-  --backdrop-filter-blur: blur(40px);
-  --box-shadow: 0 10px 20px rgb(0 0 0 / 50%)
+.Header {
+
+    background-color: rgb(229, 229, 229);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+
 }
 
-/* Navgation*/ 
+.Logo {
 
-.Header{
-  z-index: 1;
-  width: 99%;
-  height: 80px;
-  background-color: rgb(81, 127, 166);
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  margin-left: 6px;
-  border-radius: 30px;
-  filter: drop-shadow(-5px 10px 20px rgba(0,0,0,0.5));
-  position: sticky;
-}
-
-.Header .logo{
-  width: 50px;
-  height: 50px;
-  background-color: #18293c;
-  border-radius: 50px;
-  margin-left: 10px;
-}
-
-
-img{
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.Header h1{
-  margin: 20px;
-}
-
-#Secondtext {
-
-  color: #3c9fe1;
+text-decoration: none;
+text-transform: uppercase;
+color: rgb(0, 136, 255);
+font-weight: 700;
+font-size: 1.8em;
 
 }
 
 .Navigation a {
 
-color: rgb(255, 255, 255);
+color: rgb(0, 136, 255);
 text-decoration: none;
 font-size: 1.3em;
-padding-left: 70px;
-padding-bottom: 0px;
+font-weight: bold;
+padding-left: 30px;
+animation: transition2 0.5s;
+
+}
+
+.Navigation a:hover {
+
+    animation: transition1 0.5s;
+    color: rgb(134, 21, 215);
+
+}
+
+section {
+
+padding: 100px 200px;
+
+}
+
+.main {
+
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url(/Resources/FINAL\ MOSALAS) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    
+}
+
+.main h2 {
+
+    font-size: 1.6em;
+    font-weight: 500;
+
+}
+
+.main h2 span {
+
+    font-size: 3em;
+    color: gold;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.main h3 {
+
+    font-size: 2em;
+    margin-bottom: 50px;
+
+}
+
+
+
+.Main-button {
+    margin: 0px;
+    background-color: rgb(0, 136, 255);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    align-items: center;
+    animation: transition4 0.9s;
+    
+
+} 
+
+.Main-button:hover {
+
+    animation: transition3 0.9s;
+    background-color: gold;
+    color: black;
+
+}
+
+.Head {
+
+    
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+
+}
+
+.Content {
+
+    display: flex; 
+    justify-content: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 
 
 }
 
-.Header .search {
-  width: 500px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: rgb(206, 205, 205);
-  margin-left: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.Card {
 
-.Header .search input{
-  background-color: rgba(255, 255, 255, 0);
-  border: solid 3px rgba(255, 255, 255, 0);
-  width: 450px;
-  font-size: 17px;
-}
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 15px;
+    animation: transition6 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
 
-.Navigation {
-
-  margin-left: 10px;
 
 }
+
+
+.Card {
+
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 15px;
+    animation: transition6 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+
+
+}
+
+.Icon1 {
+
+    color: blue;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 115px;
+    margin-bottom: 20px;
+    animation: transition8 0.5s;
+    
+
+
+}
+
+
+.Card:hover {
+
+    animation: transition5 0.5s;
+    transform: scale(1.1);
+    
+
+}
+
+.Icon1:hover {
+
+    color: gold;
+    animation: transition7 0.5s;
+
+
+}
+
+.Info h3 {
+
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.Info p {
+
+    text-align: center;
+    font-size: larger;
+
+}
+
+.Projects {
+
+    background-color: rgb(62, 62, 62)
+
+}
+
+.Proj-Head {
+
+    display: flex;
+    justify-content: center;
+     display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+.Proj_Image {
+
+    width: 100%;
+    transform: scale(1.1);
+
+
+}
+
+
+
+
+.Info a {
+
+text-decoration: none;
+color: white;
+background-color: rgb(0, 170, 255);
+border-radius: 20px;
+padding: 10px;
+animation: transition10 0.5s;
+font-size: 19px;
+
+
+}
+
+
+.Info a:hover {
+
+animation: transition9 0.5s;
+background-color: gold;
+color: black;
+font-size: 20px;
+    
+
+}
+
+.Cont-Head {
+
+    display: flex;
+    justify-content: center;
+     display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 60px;
+    color: black;
+
+
+}
+
+
+.P {
+
+text-align: center;
+font-size: 30px;
+margin-bottom: 80px;
+
+}
+
+
+
+
+.Facebook {
+    color: black;
+    width: 70px;
+    height: 70px;
+    animation: transition12 0.5s;
+    position: static;
+    margin-right: 0;
+    margin-left: 0px;
+    
+    
+    
+    
+}
+
+.PicDiv {
+
+    display: flex;
+justify-content: center;
+
+}
+
+.Facebook:hover {
+
+    animation: transition11 0.5s;
+    color: blue;
+    width: 80px;
+    height: 70px;
+    position: static;
+    
+
+}
+
+
+
+.Behance {
+    color: black;
+    width: 70px;
+    height: 70px;
+    animation: transition12 0.5s;
+    position: static;
+    margin-left: 140px;
+}
+
+.Behance:hover {
+
+    animation: transition11 0.5s;
+    color: blue;
+    width: 80px;
+    height: 70px;
+    position: static;
+}
+
+
+.Mail {
+
+    color: black;
+    width: 70px;
+    height: 70px;
+    animation: transition12 0.5s;
+    position: static;
+    margin-left: 140px;
+
+}
+
+.Mail:hover {
+
+    animation: transition11 0.5s;
+    color: blue;
+    width: 80px;
+    height: 70px;
+    position: static;
+
+}
+
+.Fiverr {
+
+    color: black;
+    width: 70px;
+    height: 70px;
+    animation: transition12 0.5s;
+    position: static;
+    margin-left: 140px;
+
+}
+
+.Fiverr:hover {
+
+    animation: transition11 0.5s;
+    color: blue;
+    width: 80px;
+    height: 70px;
+    position: static;
+    
+
+}
+
+.FOOTER {
+
+    background-color: rgb(62, 62, 62)
+
+}
+
+.footer {
+
+color: white;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+font-size: x-large;
+
+
+}
+
+
+@media (max-width: 1023px) {
+
+    .Header {
+
+        padding: 12px 20px;
+
+    }
+
+    .Navigation a {
+
+        padding-left: 10px;
+
+    }
+
+    .Logo {
+
+        font-size: 1.8em;
+
+    }
+
+    section {
+
+        padding: 80px 20px;
+
+    }
+
+    .main {
+
+        font-size: 1.3em;
+
+    }
+
+    .Content {
+
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+
+    .PicDiv {
+
+        flex-direction: column;
+        
+        
+
+
+    }
+
+
+    .Facebook {
+
+        padding-left: 140px;
+        padding-bottom: 25px;
+
+    }
+
+    .Fiverr {
+
+        padding-bottom: 25px;
+
+
+    }
+
+    .Behance {
+
+        padding-bottom: 25px;
+
+    }
+
+    .Mail {
+
+        padding-bottom: 25px;
+
+    }
+
+    .Fiverr {
+
+        padding-bottom: 25px;
+
+    }
+
+    .Cont-Text {
+
+        padding-left: 10px;
+
+    }
+
+    .Icon1 {
+
+        margin-left: 80px;
+
+    }
+
+
+
+}
+
+
+@media (max-width: 641px) {
+
+body {
+
+    font-size: 12px;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
