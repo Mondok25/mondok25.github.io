@@ -267,12 +267,20 @@ float: left;
 
 .infoimg {
 
-    width: 400px;
-    border-radius: 500em;
+    width: 500px;
+    border-radius: 30px;
     border: 10px rgb(7, 177, 228) solid;
     float: right;
+    box-shadow: 0 5px 15px rgb(7, 177, 228);;
+    transition: 1s;
     
 
+}
+
+.infoimg:hover {
+
+    transition: 1s;
+    box-shadow: 0 5px 30px rgb(7, 500, 228);;
 }
 
 
