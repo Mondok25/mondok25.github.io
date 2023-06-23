@@ -267,13 +267,13 @@ float: left;
 
 .infoimg {
 
-    width: 500px;
+    width: 400px;
     border-radius: 30px;
     border: 10px rgb(7, 177, 228) solid;
     float: right;
     box-shadow: 0 5px 15px rgb(7, 177, 228);;
     transition: 1s;
-    margin-top: 100px;
+    margin-top: 25px;
     
 
 }
