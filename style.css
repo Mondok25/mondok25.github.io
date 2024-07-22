@@ -191,6 +191,7 @@ float: left;
 
     padding-top: 10px;
     
+    
 
 }
 
@@ -259,7 +260,7 @@ float: left;
 
     color: white;
     font-size: 23px;
-    margin-top: 12%;
+    margin-top: 3%;
     width: 90%;
     
 
@@ -269,19 +270,11 @@ float: left;
 
     width: 410px;
     border-radius: 30px;
-    border: 10px rgb(7, 177, 228) solid;
     float: right;
-    box-shadow: 0 5px 15px rgb(7, 177, 228);;
     transition: 1s;
     margin-top: 25px;
     
 
-}
-
-.infoimg:hover {
-
-    transition: 1s;
-    box-shadow: 0 5px 30px rgb(7, 500, 228);;
 }
 
 
@@ -878,7 +871,7 @@ ul{
 
     .infop {
 
-        font-size: 20px;
+        font-size: 19px;
         margin-left: 15px;
         text-align: center;
         
@@ -902,7 +895,6 @@ ul{
     .infoimg {
 
         width: 90%;
-        margin-top: 50px;
         margin-right: 20px;
         
 
