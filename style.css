@@ -10,6 +10,23 @@
     100% { color: black; }
   }
 
+  svg {
+    padding: 0;
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#242424, #656565);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #494949;
+  }
+
   .loader {
     position: fixed;
     top: 0;
@@ -117,7 +134,7 @@ html,body{
     align-items: center;
 }
 
-.H1TEXT {
+.Section1_h1 {
     margin-top: 50px;
 }
 
@@ -130,7 +147,7 @@ html,body{
     animation: color-change2 3s infinite;
 }
 
-.HTMLIMG {
+.Landing_Image {
     float: right;
     width: 45%;
    margin-left: 100px;
@@ -184,14 +201,14 @@ html,body{
     line-height: 2em;
 }
 
-.infop {
+.info_paragraph {
     color: white;
     font-size: 23px;
     margin-top: 3%;
     width: 90%;
 }
 
-.infoimg {
+.info_img {
     width: 410px;
     border-radius: 30px;
     float: right;
@@ -200,8 +217,7 @@ html,body{
 }
 
 .Section3 {
-    background-color: rgb(49, 49, 49);
-    min-height: 50vh;
+    max-height: 160vh;
     width: 100%;
 }
 
@@ -444,6 +460,7 @@ html,body{
     font-size: 40px;
     margin-bottom: 20px;
     transition: 0.5s;
+    color: black;
 }
 
 .fa-discord:hover {
@@ -467,6 +484,7 @@ html,body{
 .p3 {
     font-size: 20px;
     font-style: italic;
+    color: black;
 }
 
 .SocialLinkss {
@@ -508,13 +526,20 @@ ul{
 }
 
 .footer{
-	background-color: #24262b;
+	background-color: #1D1D1D;
     padding: 70px 0;
 }
 
 .footer-col{
    width: 40%;
    padding: 0 15px;
+}
+
+.svg {
+    margin-top: 100px;
+    width: 150%;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-col h4{
@@ -575,16 +600,20 @@ ul{
 	background-color: #ffffff;
 }
 
+.Section5 {
+    background-color: white;
+}
+
 .Section6 {
-    background-color: rgb(29, 29, 29);
+    background-color: #1D1D1D;
     min-height: 50vh;
     width: 100%;
 }
 
-.section1 {
+.section3 {
     width: 100%;
     height: 270vh;
-    background-color: #cb0040;
+    background-color: #3f3d56;
 }
 
 .card-container {
@@ -592,7 +621,8 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 100px;
+    margin: 60px;
+    margin-top: 0px;
 }
 
 .card {
@@ -602,7 +632,7 @@ ul{
     width: 100%; /* Adjust the card width as needed */
     height: auto;
     margin: 50px; /* Adjust margin as needed */
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 18px #888888;
     transition: 1s;
 } 
 
@@ -615,7 +645,8 @@ ul{
     flex: 1; /* Take up half of the card width */
     padding: 30px; /* Adjust padding as needed */
     font-family: 'Poppins', sans-serif;
-    padding-top: 90px;
+    padding-top: 50px;
+    justify-content: center;
 }
   
 .image-side {
