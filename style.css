@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @keyframes color-change {
     0% { color: rgb(14, 179, 250); }
     50% { color: black; }
@@ -66,7 +67,7 @@
   }
   
 *{
-    font-family:  sans-serif;
+    font-family: 'Outfit';
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -266,7 +267,7 @@ html,body{
 
 .Card {
     background-color: white;
-    width: 21.25em;
+    width: 25em;
     border-radius: 25px;
     padding: 25px;
     margin-left: 20px;
@@ -351,80 +352,51 @@ html,body{
     color: rgb(7, 177, 228);
 }
 
-.Content2 {
-    display: flex; 
-    justify-content: center; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+.Project1 {
+    margin-bottom: 100px;
 }
 
-.Proj-Head {
+.Project-content {
     display: flex;
-    justify-content: center;
-     display: flex;
-    justify-content: center;
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white;
+    align-items: center; /* Vertically center the text and button next to the image */
+    justify-content: flex-start; /* Keeps the image on the left and text on the right */
+    gap: 20px; /* Space between the image and text */
 }
 
-.Proj_Image {
-    width: 100%;
-    transform: scale(1.1);
+.Studium {
+    width: 600px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    box-shadow: 0 5px 10px rgb(41, 66, 66);
 }
 
-.Info2 a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background-color: white;
-    border-radius: 20px;
-    padding: 12px;
-    transition: 0.5s;
-    font-size: 19px;
-}
-
-.Info2 a:hover {
-    transition: 0.5s;
-    background-color: rgba(255,255,255,0.2);
-    color: white;
-    font-size: 20px;
-}
-
-.Card2 {
-    background-color: rgb(41, 66, 66);
-    width: 20em;
-    border-radius: 20px;
-    padding: 25px;
-    margin: 20px;
-    transition: 1s;
+.Project-details {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column; /* Stacks the text and button vertically */
+}
+
+.Project-details p {
+    font-size: 18px;
+}
+
+.Project-details button {
+    width: 150px; /* Automatically adjust the button's width to fit the content */
+    padding: 10px 10px; /* Adjust the padding to give it a balanced size */
+    margin-top: 10px; /* Adds space between the text and button */
+    cursor: pointer; /* Optional: change the cursor to pointer on hover */
+    background-color: #1D1D1D;
+    color: white;
+    font-size: 18px;
     transition: 0.5s;
 }
 
-.Card2:hover {
-    transform: scale(1.1);
+.Project-details button:hover {
+    background-color: #2e3137;
     transition: 0.5s;
 }
 
-.Info2 {
-    margin-top: 20px;
-}
 
-.Info2 p {
-    text-align: center;
-    font-size: larger;
-    color: white;
-}
 
-.Wtf {
-    text-align: center;
-    color: white;
-    padding-bottom: 20px;
-}
+
 
 .btn2 {
     margin-top: 50px;
@@ -644,9 +616,12 @@ ul{
 .text-side {
     flex: 1; /* Take up half of the card width */
     padding: 30px; /* Adjust padding as needed */
-    font-family: 'Poppins', sans-serif;
     padding-top: 50px;
     justify-content: center;
+}
+
+.text-side p {
+    line-height: 1.7em;
 }
   
 .image-side {
