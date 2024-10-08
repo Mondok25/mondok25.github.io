@@ -762,20 +762,22 @@ ul{
         margin-left: 82px;
         margin-top: 15px;
     }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .Project-content {
+        flex-direction: column;
+    }
 }
 
 
 
 @media (max-width: 641px) {
-
     body {
-    
         font-size: 12px;
-    
-    
     }
-    
-    
 }
 
   }
